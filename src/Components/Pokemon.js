@@ -24,7 +24,7 @@ class Pokemon extends Component {
 
     try {
       const { data } = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon/${searchPokemon}`
+        `https://pokeapi.co/api/v2/pokemon/${searchPokemon}`,
       );
       this.setState({
         currentPokemon: data,
